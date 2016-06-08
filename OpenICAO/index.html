@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenICAO</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <p>Welcome to OpenICAO!</p>
+    <p>OpenICAO simply returns the closest weather ICAO station to a given latitude and longitude.</p>
+    <p>
+        Example: <a href="Search/?lat=-90&lngt=-180">http://api.openweather.pw/Search/?lat=-90&lngt=-180</a>
+    </p>
+    <br />
+    <p>
+        You can also query NOAA for current weather data with latitude and longitude or ICAO.
+        This will return an XML formatted string of the last 24 hours of observation.
+    </p>
+    <p>
+        Example: <a href="Query/?lat=-90&lngt=-180">http://api.openweather.pw/Query/?lat=-90&lngt=-180</a>
+    </p>
+    <p>
+        Example: <a href="Query/?icao=NZSP">http://api.openweather.pw/Query/?icao=NZSP</a>
+    </p>
+    <br />
+    <br />
+    <p>
+        All data returned from the ICAO search portion of this site (http://api.openweather.pw/Search/) is under the BSD 3-Clause License (available <a href="LICENSE.html">here</a>), and is free of use. We do not make claims that the data is accurate.
+    </p>
+    <p>Weather data returned from the query section of this site (http://api.openweather.pw/Query/) is pulled directly from NOAA.</p>
+    <p>
+        <a href="http://www.noaa.gov/">NOAA</a>
+    </p>
+    <p>
+        <a href="https://www.aviationweather.gov/">Aviation Weather Center</a>
+    </p>
+</body>
+</html>
