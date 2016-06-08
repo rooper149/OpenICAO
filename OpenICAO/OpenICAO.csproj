@@ -52,12 +52,16 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="OpenWeather, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\OpenWeather.dll</HintPath>
+      <HintPath>..\packages\OpenWeather.1.0.0\lib\net\OpenWeather.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="UnitsNet, Version=3.36.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnitsNet.3.36.0\lib\net35\UnitsNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
