@@ -14,7 +14,7 @@ namespace OpenICAO
                     var lat = Convert.ToDouble(Request.QueryString["lat"]);
                     var lngt = Convert.ToDouble(Request.QueryString["lngt"]);
 
-                    var station = StationList.Instance.Lookup(lat, lngt);
+                    var station = StationLookup.Instance.Lookup(lat, lngt);
 
                     Response.Write(station.ICAO);
                 }

@@ -21,7 +21,7 @@ namespace OpenICAO
 
                     var lat = Convert.ToDouble(Request.QueryString["lat"]);
                     var lngt = Convert.ToDouble(Request.QueryString["lngt"]);
-                    var station = StationList.Instance.Lookup(lat, lngt);
+                    var station = StationLookup.Instance.Lookup(lat, lngt);
 
                     var url =
                        $"https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&stationString={station.ICAO}&hoursBeforeNow=24";
