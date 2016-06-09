@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Web.Routing;
+using OpenWeather;
 
 namespace OpenICAO
 {
     public class Global : System.Web.HttpApplication
     {
 
-        protected void Application_Start(object sender, EventArgs e) => RouteConfig.RegisterRoutes(RouteTable.Routes);
+        protected void Application_Start(object sender, EventArgs e)
+        {
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            StationLookup.Instance.ZeroActionInitialize();
+        }
 
         protected void Session_Start(object sender, EventArgs e)
         {
