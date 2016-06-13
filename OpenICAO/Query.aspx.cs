@@ -21,10 +21,10 @@ namespace OpenICAO
 
                     var lat = Convert.ToDouble(Request.QueryString["lat"]);
                     var lngt = Convert.ToDouble(Request.QueryString["lngt"]);
-                    var station = StationLookup.Instance.Lookup(lat, lngt);
+                    var station = MetarStationLookup.Instance.Lookup(lat, lngt);
 
                     var url =
-                       $"https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&stationString={station.ICAO}&hoursBeforeNow=24";
+                       $"https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&stationString={station.GetStationInfo.ICAO}&hoursBeforeNow=24";
                     Response.Write(new WebClient().DownloadString(url));
                 }
                 else

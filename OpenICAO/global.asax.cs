@@ -10,7 +10,7 @@ namespace OpenICAO
         protected void Application_Start(object sender, EventArgs e)
         {
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            StationLookup.ZeroActionInitialize();
+            MetarStationLookup.ZeroActionInitialize();
         }
 
         protected void Session_Start(object sender, EventArgs e)
